@@ -1,0 +1,19 @@
+def par_ou_impar(numero):
+    if numero % 2 == 0:
+        return "o número é par"
+    else:
+        return "o número é impar"
+
+print("Faça sua escolha: ")
+print("1) Verificar se o número é par ou ímpar")
+print("2) Verificar a quantidade de caracteres do texto que escrever.")
+
+choose = int(input("Digite sua escolha:"))
+
+match choose:
+    case 1:
+        numero = int(input("Digite o número que deseja verificar: "))
+        print(par_ou_impar(numero))
+    case 2:
+        texto = input("Digite o texto que deseja verificar: ")
+        print(len(texto))
